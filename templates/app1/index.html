@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Django - App 1</title>   
+        <link rel="stylesheet" href="{% static "css/mystyle.css" %}"/>     
+    </head>
+    <body>
+        <h1> Hello, This is from Index.html</h1>
+        <h1>{{ insert_me }}</h1>
+        <h1>H1 is red as css file is drawn from static</h1>
+        <br>
+        <h3>Lets add an image from static folder</h3>
+        <img src= '{% static "images/index.jpg" %}' alt="Minions">
+        
+    </body>
+</html>
