@@ -51,6 +51,9 @@ def users(request):
     return render(request, 'app1/users.html', {'form':form})
 
 
+def relative(request):
+    return render(request, 'app1/relative_url_templates.html')
 
-
+def other(request):
+    return render(request, 'app1/other.html')
     

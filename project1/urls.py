@@ -22,11 +22,11 @@ from django.conf.urls import include
 urlpatterns = [
     path('', views.index, name='index'),
     path('admin/', admin.site.urls),
-    path('app1/', include('app1.urls')),
     path('formhome/', views.form_home, name='form_home'),
     path('formpage/', views.form_name_view, name='form_name'),
     path('signuphome/', views.signup_home, name='users'),
     path('signup/', views.users, name='users'),
+    path('app1/', include('app1.urls'))
 ]
 
 
