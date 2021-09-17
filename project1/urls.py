@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app1 import views
-from django.conf.urls import include
+from django.conf.urls import include, url
 
 
 urlpatterns = [
@@ -26,7 +26,8 @@ urlpatterns = [
     path('formpage/', views.form_name_view, name='form_name'),
     path('signuphome/', views.signup_home, name='users'),
     path('signup/', views.users, name='users'),
-    path('app1/', include('app1.urls'))
+    path('app1/', include('app1.urls')),
+    path('index2/', views.index2, name='index2'),
 ]
 
 
